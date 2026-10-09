@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BLoom</title>
+
+    <style>
+
+        /* ===== DISEÑO GENERAL ===== */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: #FCC6BB;
+            color: #A2025A;
+            font-family: "Trebuchet MS", sans-serif;
+            text-align: center;
+        }
+
+
+        /* ===== ENCABEZADO ===== */
+
+        header {
+            background-color: #A2025A;
+            color: #FCC6BB;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: cursive;
+            font-size: 50px;
+        }
+
+        header p {
+            font-size: 22px;
+        }
+
+
+        /* ===== MENÚ ===== */
+
+        nav {
+            background-color: #FCC6BB;
+            padding: 15px;
+            border-bottom: 3px solid #A2025A;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #A2025A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* ===== CONTENIDO ===== */
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #FFE8E3;
+            border: 2px solid #A2025A;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 25px 0;
+            scroll-margin-top: 80px;
+        }
+
+        h2 {
+            font-family: cursive;
+            color: #A2025A;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+
+        /* ===== TARJETAS ===== */
+
+        .categorias {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: #FCC6BB;
+            border: 2px solid #A2025A;
+            border-radius: 15px;
+            padding: 20px;
+            width: 180px;
+        }
+
+        .tarjeta h3 {
+            color: #A2025A;
+        }
+
+
+        /* ===== PIE DE PÁGINA ===== */
+
+        footer {
+            background-color: #A2025A;
+            color: #FCC6BB;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+
+    <header>
+        <h1>BLoom</h1>
+        <p>🌸 Manga y Manhwa 🌸</p>
+    </header>
+
+
+    <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#catalogo">Catálogo</a>
+
+        <a href="#recomendaciones">Recomendaciones</a>
+
+        <a href="#resenas">Reseñas</a>
+
+        <a href="#autores">Autores</a>
+
+        <a href="#sobre">Sobre BLoom</a>
+
+    </nav>
+
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+
+    <main>
+
+
+        <!-- INICIO -->
+
+        <section id="inicio">
+
+            <h2>🌸 Bienvenidos a BLoom 🌸</h2>
+
+            <p>
+                Un espacio para descubrir nuevas historias,
+                recomendaciones y reseñas de manga y manhwa.
+            </p>
+
+            <p>
+                ✨ Explora, descubre y encuentra tu próxima historia favorita. ✨
+            </p>
+
+        </section>
+
+
+        <!-- CATÁLOGO -->
+
+        <section id="catalogo">
+
+            <h2>📚 Catálogo</h2>
+
+            <div class="categorias">
+
+                <div class="tarjeta">
+
+                    <h3>📖 Manga</h3>
+
+                    <p>
+                        Descubre nuevos títulos.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>🌸 Manhwa</h3>
+
+                    <p>
+                        Explora nuevas historias.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>💗 Géneros</h3>
+
+                    <p>
+                        Romance, comedia y drama.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECOMENDACIONES -->
+
+        <section id="recomendaciones">
+
+            <h2>✨ Recomendaciones</h2>
+
+            <div class="categorias">
+
+                <div class="tarjeta">
+
+                    <h3>🆕 Nuevos</h3>
+
+                    <p>
+                        Historias recientes para descubrir.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>🔥 Populares</h3>
+
+                    <p>
+                        Los títulos más recomendados.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESEÑAS -->
+
+        <section id="resenas">
+
+            <h2>📝 Reseñas</h2>
+
+            <div class="categorias">
+
+                <div class="tarjeta">
+
+                    <h3>📖 Manga</h3>
+
+                    <p>
+                        Opiniones y reseñas de manga.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>🌸 Manhwa</h3>
+
+                    <p>
+                        Opiniones y reseñas de manhwa.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AUTORES -->
+
+        <section id="autores">
+
+            <h2>✍️ Autores</h2>
+
+            <div class="categorias">
+
+                <div class="tarjeta">
+
+                    <h3>🎨 Mangakas</h3>
+
+                    <p>
+                        Conoce a diferentes autores de manga.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>🖋️ Autores</h3>
+
+                    <p>
+                        Descubre a los creadores de tus historias favoritas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE BLOOM -->
+
+        <section id="sobre">
+
+            <h2>💗 Sobre BLoom</h2>
+
+            <p>
+                BLoom es un proyecto dedicado a descubrir,
+                explorar y compartir información sobre manga y manhwa.
+            </p>
+
+            <p>
+                🌸 ¡Gracias por visitar BLoom! 🌸
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ===== PIE DE PÁGINA ===== -->
+
+    <footer>
+
+        <p>
+            © 2026 BLoom | Manga y Manhwa 🌸
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
